@@ -1,0 +1,11 @@
+@import "abstracts/animations";
+
+@layer base {
+  body {
+    background: $white-2;
+  }
+
+  .dark body {
+    background: $black;
+  }
+}

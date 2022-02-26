@@ -1,5 +1,5 @@
-import en from '../locales/en.json'
-import br from '../locales/br.json'
+import en from '../locales/en.js'
+import br from '../locales/br.js'
 
 export default {
   locale: 'en',

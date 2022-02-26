@@ -1,0 +1,21 @@
+@keyframes fadeBottom10 {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.fadeBottom10-enter-active,
+.fadeBottom10-leave-active {
+  transition: all 200ms;
+}
+.fadeBottom10-enter,
+.fadeBottom10-leave-active {
+  opacity: 0;
+  transform: translateY(10px);
+}
