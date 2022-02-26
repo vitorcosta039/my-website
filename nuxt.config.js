@@ -1,3 +1,5 @@
+import i18n from './config/i18n';
+
 export default {
   target: 'static',
 
@@ -17,8 +19,10 @@ export default {
   plugins: [],
 
   components: [
-    '~/components',
-    { path: '~/components/other', extensions: ['vue'] }
+    {
+      path: '~/components', // will get any components nested in let's say /components/test too
+      pathPrefix: false
+    }
   ],
 
   buildModules: [
@@ -50,7 +54,27 @@ export default {
     classSuffix: ''
   },
 
-  modules: ['@nuxtjs/pwa'],
+  modules: [
+    '@nuxtjs/pwa',
+    [
+      '@nuxtjs/i18n',
+      {
+        vueI18nLoader: true,
+        defaultLocale: 'en',
+        locales: [
+          {
+            code: 'en',
+            name: 'English'
+          },
+          {
+            code: 'br',
+            name: 'Português'
+          }
+        ],
+        vueI18n: i18n
+      }
+    ]
+  ],
 
   pwa: {
     manifest: {
@@ -59,4 +83,4 @@ export default {
   },
 
   build: {}
-}
+};
