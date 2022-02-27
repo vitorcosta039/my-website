@@ -16,11 +16,9 @@ export default {
 
   css: ['./assets/style/main.scss'],
 
-  plugins: [],
-
   components: [
     {
-      path: '~/components', // will get any components nested in let's say /components/test too
+      path: '~/components',
       pathPrefix: false
     }
   ],
@@ -82,5 +80,9 @@ export default {
     }
   },
 
-  build: {}
+  server: {
+    port: 8000,
+    host: '0.0.0.0',
+    timing: false
+  }
 };
