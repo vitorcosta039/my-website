@@ -20,7 +20,11 @@ module.exports = {
       'success': '#2FCB5A',
     },
     container: {
-      center: true
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        xl: '2rem',
+      },
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif']
