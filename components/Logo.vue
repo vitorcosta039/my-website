@@ -26,11 +26,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.dark {
-  .logo {
-    path {
-      fill: #ffffff;
-    }
-  }
-}
+
 </style>
