@@ -45,7 +45,9 @@ export default {
       }
     ],
     '@nuxtjs/tailwindcss',
-    '@nuxt-hero-icons/solid/nuxt'
+    '@nuxt-hero-icons/outline/nuxt',
+    '@nuxt-hero-icons/solid/nuxt',
+    'nuxt-animejs'
   ],
 
   colorMode: {
