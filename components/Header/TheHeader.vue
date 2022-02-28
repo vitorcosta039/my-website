@@ -14,8 +14,8 @@
     "
   >
     <div class="container flex items-center justify-between">
-      <nuxt-link :to="`/${$i18n.locale !== 'en' ? $i18n.locale : ''}`">
-        <Logo />
+      <nuxt-link v-anime="{ ...fadeIn }" :to="`/${$i18n.locale !== 'en' ? $i18n.locale : ''}`">
+        <Logo class="header__logo-desktop" />
       </nuxt-link>
 
       <div class="flex items-center">
@@ -43,7 +43,7 @@
           "
         >
           <div class="flex items-start lg:hidden justify-between mb-10 w-full">
-            <Logo class="mt-8" />
+            <Logo class="mt-8 header__logo-mobile" />
             <button type="button" @click="toggleMenu(false)">
               <OutlineXIcon width="24" class="text-gray-400" />
             </button>
@@ -51,19 +51,19 @@
 
           <nav class="w-full">
             <ul class="flex flex-col lg:flex-row mb-8 lg:mb-0">
-              <li>
+              <li v-anime="{ ...fadeInLeft10 }">
                 <header-link link="#">
                   <OutlineUserIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.about-me') }}
                 </header-link>
               </li>
-              <li>
+              <li v-anime="{ ...fadeInLeft10, delay: 200 }">
                 <header-link link="#">
                   <OutlineChartBarIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.skills') }}
                 </header-link>
               </li>
-              <li>
+              <li v-anime="{ ...fadeInLeft10, delay: 400 }">
                 <header-link link="#">
                   <OutlineClipboardListIcon
                     width="24"
@@ -72,13 +72,13 @@
                   {{ $t('menu.portfolio') }}
                 </header-link>
               </li>
-              <li>
+              <li v-anime="{ ...fadeInLeft10, delay: 600 }">
                 <header-link link="#">
                   <OutlinePuzzleIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.experience') }}
                 </header-link>
               </li>
-              <li>
+              <li v-anime="{ ...fadeInLeft10, delay: 800 }">
                 <header-link link="#">
                   <OutlineMailIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.contact') }}
@@ -88,7 +88,7 @@
           </nav>
 
           <ul class="header__social flex items-center lg:ml-4">
-            <li>
+            <li v-anime="{ ...fadeInLeft10 }">
               <header-social-link
                 link="https://www.instagram.com/vitorcosta.dev/"
                 title="Instagram"
@@ -96,7 +96,7 @@
                 <IconInstagram class="icon--stroke" />
               </header-social-link>
             </li>
-            <li>
+            <li v-anime="{ ...fadeInLeft10, delay: 200 }">
               <header-social-link
                 link="https://www.linkedin.com/in/jose-costaa/"
                 title="Linkedin"
@@ -104,7 +104,7 @@
                 <IconLinkedin class="icon--stroke" />
               </header-social-link>
             </li>
-            <li>
+            <li v-anime="{ ...fadeInLeft10, delay: 400 }">
               <header-social-link
                 link="https://www.behance.net/vitorcosta0"
                 title="Behance"
@@ -112,7 +112,7 @@
                 <IconBehance class="icon--fill" />
               </header-social-link>
             </li>
-            <li>
+            <li v-anime="{ ...fadeInLeft10, delay: 600 }">
               <header-social-link
                 link="https://github.com/vitorcosta039/"
                 title="GitHub"
@@ -124,10 +124,11 @@
         </div>
 
         <div class="flex items-center">
-          <TheChangeTheme id="theme-header" class="mr-2 lg:mr-4" />
-          <HeaderLanguage />
+          <TheChangeTheme id="theme-header" v-anime="{ ...fadeInLeft10 }" class="mr-2 lg:mr-4" />
+          <HeaderLanguage v-anime="{ ...fadeInLeft10, delay: 200 }" />
 
           <button
+            v-anime="{ ...fadeInLeft10, delay: 400 }"
             type="button"
             class="flex lg:hidden ml-6"
             @click="toggleMenu(true)"
@@ -144,8 +145,16 @@
 </template>
 
 <script>
+import { fadeIn, fadeInLeft10 } from '../../config/animations.js';
+
 export default {
   name: 'Header',
+  data() {
+    return {
+      fadeInLeft10,
+      fadeIn
+    };
+  },
   methods: {
     toggleMenu(isActive) {
       if (isActive) {
@@ -159,6 +168,12 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+  .header__logo-mobile::v-deep {
+    path {
+      fill: #ffffff;
+    }
+  }
+
   &__lists {
     border-radius: 4px 0 0 4px;
     height: 100vh;
@@ -226,6 +241,16 @@ export default {
 
     .header__lists {
       transform: translateX(0%);
+    }
+  }
+}
+
+.dark {
+  .header {
+    .header__logo-desktop::v-deep {
+      path {
+        fill: #ffffff;
+      }
     }
   }
 }

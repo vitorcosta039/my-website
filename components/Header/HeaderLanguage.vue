@@ -2,20 +2,18 @@
   <div class="language relative">
     <div class="language__active">
       <div class="cursor-pointer flex items-center">
-        <transition name="fadeBottom10" mode="in-out">
-          <img
-            v-if="$i18n.locale == 'en'"
-            key="USA"
-            src="@/assets/images/icons/icon-eua.png"
-            alt="USA"
-          />
-          <img
-            v-else
-            key="Brasil"
-            src="@/assets/images/icons/icon-brasil.png"
-            alt="Brasil"
-          />
-        </transition>
+        <img
+          v-if="$i18n.locale == 'en'"
+          key="USA"
+          src="@/assets/images/icons/icon-eua.png"
+          alt="USA"
+        />
+        <img
+          v-else
+          key="Brasil"
+          src="@/assets/images/icons/icon-brasil.png"
+          alt="Brasil"
+        />
       </div>
     </div>
 
@@ -35,11 +33,28 @@
     >
       <li>
         <nuxt-link
-          class="rounded-sm cursor-pointer flex hover:bg-gray-100 dark:hover:bg-gray-600 items-center p-2"
+          class="
+            rounded-sm
+            cursor-pointer
+            flex
+            hover:bg-gray-100
+            dark:hover:bg-gray-600
+            items-center
+            p-2
+          "
           :to="switchLocalePath('en')"
         >
           <img src="@/assets/images/icons/icon-eua.png" alt="USA" />
-          <p class="ml-2 mr-1 text-gray-600 dark:text-gray-200 text-sm whitespace-nowrap">
+          <p
+            class="
+              ml-2
+              mr-1
+              text-gray-600
+              dark:text-gray-200
+              text-sm
+              whitespace-nowrap
+            "
+          >
             <span class="text-gray-400 dark:text-gray-500">(EN)</span> English
           </p>
           <transition name="fadeBottom10" mode="out-in">
@@ -53,11 +68,28 @@
       </li>
       <li>
         <nuxt-link
-          class="rounded-sm cursor-pointer flex hover:bg-gray-100 dark:hover:bg-gray-600 items-center p-2"
+          class="
+            rounded-sm
+            cursor-pointer
+            flex
+            hover:bg-gray-100
+            dark:hover:bg-gray-600
+            items-center
+            p-2
+          "
           :to="switchLocalePath('br')"
         >
           <img src="@/assets/images/icons/icon-brasil.png" alt="Brasil" />
-          <p class="ml-2 mr-1 text-gray-600 dark:text-gray-200 text-sm whitespace-nowrap">
+          <p
+            class="
+              ml-2
+              mr-1
+              text-gray-600
+              dark:text-gray-200
+              text-sm
+              whitespace-nowrap
+            "
+          >
             <span class="text-gray-400 dark:text-gray-500">(PT)</span> Português
           </p>
           <transition name="fadeBottom10" mode="out-in">
