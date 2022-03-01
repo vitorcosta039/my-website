@@ -64,6 +64,7 @@
           btn btn-blue
           font-semibold
           mb-12
+          lg:mb-4
           px-4
           py-2
           text-sm
@@ -80,7 +81,7 @@
         v-anime="{ ...fadeInTop20, delay: 600, duration: 800 }"
         v-wave
         href="#about"
-        class="moveY10Infinite flex items-center justify-center h-12 mx-auto text-gray-600 dark:text-white w-12 rounded-full"
+        class="moveY10Infinite flex items-center justify-center h-12 mx-auto text-primary dark:text-white w-12 rounded-full"
       >
         <OutlineChevronDownIcon width="24" />
       </a>
