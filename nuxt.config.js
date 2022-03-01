@@ -1,7 +1,12 @@
+import { resolve } from 'path'
 import i18n from './config/i18n';
 
 export default {
   target: 'static',
+
+  alias: {
+    'images': resolve(__dirname, './assets/images')
+  },
 
   head: {
     title: 'Vitor Costa | Website',
@@ -73,7 +78,8 @@ export default {
         ],
         vueI18n: i18n
       }
-    ]
+    ],
+    'v-wave/nuxt'
   ],
 
   pwa: {
