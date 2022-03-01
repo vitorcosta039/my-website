@@ -8,3 +8,9 @@ export const fadeInLeft10 = {
   translateX: [-10, 0],
   easing: 'easeInOutSine'
 };
+
+export const fadeInTop20 = {
+  opacity: [0, 1],
+  translateY: [-20, 0],
+  easing: 'easeInOutSine'
+};

@@ -1,24 +1,27 @@
 <template>
   <main class="home">
-    <!-- <h1 class="dark:bg-additional-1">Color mode: {{ $colorMode.value }}</h1>
-    <Logo />
-    {{ $t('message') }}
-
-    <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
-    <nuxt-link :to="switchLocalePath('br')">Português</nuxt-link>
-
-    <select v-model="$colorMode.preference">
-      <option value="system">System</option>
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select> -->
+    <Hero />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   </main>
 </template>
 
 <script>
 export default {
-  name: 'Home'
-}
+  name: 'Home',
+  mounted() {
+    this.setAnimation();
+  },
+
+  methods: {
+    setAnimation() {
+      this.$anime({
+        targets: '.title',
+        opacity: [0, 1],
+        duration: 10000
+      });
+    }
+  }
+};
 </script>
 
 <style>

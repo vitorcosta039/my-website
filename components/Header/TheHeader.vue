@@ -1,21 +1,13 @@
 <template>
   <header
     ref="header"
-    class="
-      header
-      bg-white
-      dark:bg-black-2
-      fixed
-      flex
-      h-16
-      lg:h-20
-      items-center
-      shadow-sm
-      w-full
-    "
+    class="header fixed flex h-16 lg:h-20 items-center shadow-sm w-full"
   >
     <div class="container flex items-center justify-between">
-      <nuxt-link v-anime="{ ...fadeIn }" :to="`/${$i18n.locale !== 'en' ? $i18n.locale : ''}`">
+      <nuxt-link
+        v-anime="{ ...fadeIn }"
+        :to="`/${$i18n.locale !== 'en' ? $i18n.locale : ''}`"
+      >
         <Logo class="header__logo-desktop" />
       </nuxt-link>
 
@@ -45,8 +37,13 @@
         >
           <div class="flex items-start lg:hidden justify-between mb-10 w-full">
             <Logo class="mt-8 header__logo-mobile" />
-            <button type="button" @click="toggleMenu(false)">
-              <OutlineXIcon width="24" class="text-gray-400" />
+            <button
+              v-wave
+              type="button"
+              class="rounded-sm text-gray-400"
+              @click="toggleMenu(false)"
+            >
+              <OutlineXIcon width="24" />
             </button>
           </div>
 
@@ -125,13 +122,18 @@
         </div>
 
         <div class="flex items-center">
-          <TheChangeTheme id="theme-header" v-anime="{ ...fadeIn }" class="mr-2 lg:mr-4" />
+          <TheChangeTheme
+            id="theme-header"
+            v-anime="{ ...fadeIn }"
+            class="mr-2 lg:mr-4"
+          />
           <HeaderLanguage v-anime="{ ...fadeIn, delay: 200, duration: 600 }" />
 
           <button
+            v-wave
             v-anime="{ ...fadeIn, delay: 400, duration: 600 }"
             type="button"
-            class="flex lg:hidden ml-6"
+            class="rounded-sm flex lg:hidden ml-6"
             @click="toggleMenu(true)"
           >
             <OutlineMenuAlt3Icon
@@ -169,6 +171,9 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+  background: rgba($color: #fff, $alpha: 0.9);
+  backdrop-filter: blur(4px);
+  z-index: 999999;
   .header__logo-mobile::v-deep {
     path {
       fill: #ffffff;
@@ -232,7 +237,7 @@ export default {
   &.active--menu {
     &::after {
       background: rgba($color: #000000, $alpha: 0.5);
-      content: '1';
+      content: '';
       height: 100vh;
       left: 0;
       position: absolute;
@@ -248,6 +253,8 @@ export default {
 
 .dark {
   .header {
+    background: rgba($color: $black-2, $alpha: 0.9);
+    backdrop-filter: blur(4px);
     .header__logo-desktop::v-deep {
       path {
         fill: #ffffff;

@@ -1,0 +1,162 @@
+<template>
+  <div class="hero container flex items-center justify-between">
+    <div class="py-20 w-full sm:w-auto">
+      <div class="hero__title mb-6 relative">
+        <h1
+          class="
+            font-semibold
+            relative
+            text-2xl
+            lg:text-3xl
+            text-black-2
+            dark:text-white
+          "
+        >
+          <span v-anime="{ ...fadeInTop20, duration: 600 }" class="flex pl-6">
+            {{ $t('hero.presentation[0]') }}
+            <br />
+          </span>
+          <span
+            v-anime="{ ...fadeInTop20, delay: 200, duration: 600 }"
+            class="flex pl-6"
+          >
+            {{ $t('hero.presentation[1]') }}
+            <br />
+          </span>
+          <span
+            v-anime="{ ...fadeInTop20, delay: 400, duration: 600 }"
+            class="flex pl-6"
+          >
+            {{ $t('hero.presentation[2]') }}
+          </span>
+        </h1>
+
+        <p
+          class="
+            absolute
+            font-semibold
+            tracking-tighter
+            text-gray-300
+            dark:text-gray-600
+            opacity-50
+            text-5xl
+            lg:text-7xl
+          "
+        >
+          <span
+            v-anime="{ ...fadeIn, delay: 200, duration: 600 }"
+            class="inline-flex whitespace-nowrap"
+            >{{ $t('hero.welcome[0]') }}</span
+          >
+          <br />
+          <span
+            v-anime="{ ...fadeIn, delay: 400, duration: 600 }"
+            class="inline-flex whitespace-nowrap"
+            >{{ $t('hero.welcome[1]') }}</span
+          >
+        </p>
+      </div>
+
+      <a
+        v-anime="{ ...fadeInTop20, delay: 600, duration: 600 }"
+        v-wave
+        class="btn btn-blue font-semibold px-4 py-2 text-sm w-full sm:w-auto"
+        href="mailto:vitorcostacontato588@gmail.com"
+      >
+        entre em contato
+        <OutlineArrowRightIcon class="ml-2" width="20" />
+      </a>
+    </div>
+
+    <div
+      class="
+        hero__right
+        hidden
+        lg:flex lg:items-center lg:flex-col lg:justify-center
+        px-8 py-16
+      "
+    >
+      <div class="hero__right-content px-8">
+        <picture v-anime="{ ...fadeIn, duration: 600 }" class="flex items-center relative w-full">
+          <img class="absolute left-0 top-0 w-full" src="~images/16x9.png" alt="Projeto" />
+        </picture>
+        <h2 v-anime="{ ...fadeIn, duration: 600 }" class="font-semibold px-4 mt-2 mb-1 text-gray-100 text-sm">Nome do projeto</h2>
+        <p v-anime="{ ...fadeIn, duration: 600 }" class="px-4 text-gray-300 text-xs">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          doloribus neque corrupti esse fuga earum quod nisi hic blanditiis.
+        </p>
+        <a v-anime="{ ...fadeIn, duration: 600 }" href="#" class="block mx-auto mt-4 text-right text-white text-xs">Ver completo</a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { fadeIn, fadeInTop20 } from '../config/animations.js';
+
+export default {
+  name: 'Hero',
+  data() {
+    return {
+      fadeIn,
+      fadeInTop20
+    };
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.hero {
+  &__title {
+    p {
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+
+  &__right {
+    background: linear-gradient(100.12deg, #5480f2, rgba(81, 126, 241, 0.8));
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 32px 32px;
+    overflow: hidden;
+    position: relative;
+    width: 60%;
+
+    &::after,
+    &::before {
+      background: linear-gradient(225deg, #c4c4c4, rgba(196, 196, 196, 0));
+      border-radius: 50%;
+      content: '';
+    }
+
+    &::after {
+      height: 160px;
+      position: absolute;
+      right: -80px;
+      top: -60px;
+      width: 160px;
+    }
+
+    &::before {
+      bottom: 20px;
+      height: 200px;
+      left: -100px;
+      position: absolute;
+      width: 200px;
+    }
+
+    &-content {
+      max-width: 420px;
+      z-index: 5;
+
+      picture {
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        overflow: hidden;
+        padding-top: 56.25%;
+      }
+    }
+  }
+}
+</style>

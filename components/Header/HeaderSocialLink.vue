@@ -1,5 +1,6 @@
 <template>
   <a
+    v-wave
     class="
       duration-200
       ease-in
@@ -8,6 +9,7 @@
       p-3
       lg:p-2
       rounded-full
+      text-white
     "
     :href="link"
     target="_black"
