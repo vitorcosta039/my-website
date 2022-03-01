@@ -1,6 +1,6 @@
 <template>
-  <div class="hero container flex items-center justify-between">
-    <div class="py-20 w-full sm:w-auto">
+  <section class="hero container flex items-center justify-between">
+    <div class="hero__left flex flex-col justify-center w-full sm:w-auto">
       <div class="hero__title mb-6 relative">
         <h1
           class="
@@ -60,11 +60,29 @@
       <a
         v-anime="{ ...fadeInTop20, delay: 600, duration: 600 }"
         v-wave
-        class="btn btn-blue font-semibold px-4 py-2 text-sm w-full sm:w-auto"
+        class="
+          btn btn-blue
+          font-semibold
+          mb-12
+          px-4
+          py-2
+          text-sm
+          w-full
+          sm:w-auto
+        "
         href="mailto:vitorcostacontato588@gmail.com"
       >
         entre em contato
         <OutlineArrowRightIcon class="ml-2" width="20" />
+      </a>
+
+      <a
+        v-anime="{ ...fadeInTop20, delay: 600, duration: 800 }"
+        v-wave
+        href="#about"
+        class="moveY10Infinite flex items-center justify-center h-12 mx-auto text-gray-600 dark:text-white w-12 rounded-full"
+      >
+        <OutlineChevronDownIcon width="24" />
       </a>
     </div>
 
@@ -73,22 +91,43 @@
         hero__right
         hidden
         lg:flex lg:items-center lg:flex-col lg:justify-center
-        px-8 py-16
+        px-8
+        py-16
       "
     >
       <div class="hero__right-content px-8">
-        <picture v-anime="{ ...fadeIn, duration: 600 }" class="flex items-center relative w-full">
-          <img class="absolute left-0 top-0 w-full" src="~images/16x9.png" alt="Projeto" />
+        <picture
+          v-anime="{ ...fadeIn, duration: 600 }"
+          class="flex items-center relative w-full"
+        >
+          <img
+            class="absolute left-0 top-0 w-full"
+            src="~images/16x9.png"
+            alt="Projeto"
+          />
         </picture>
-        <h2 v-anime="{ ...fadeIn, duration: 600 }" class="font-semibold px-4 mt-2 mb-1 text-gray-100 text-sm">Nome do projeto</h2>
-        <p v-anime="{ ...fadeIn, duration: 600 }" class="px-4 text-gray-300 text-xs">
+        <h2
+          v-anime="{ ...fadeIn, duration: 600 }"
+          class="font-semibold px-4 mt-2 mb-1 text-gray-100 text-sm"
+        >
+          Nome do projeto
+        </h2>
+        <p
+          v-anime="{ ...fadeIn, duration: 600 }"
+          class="px-4 text-gray-300 text-xs"
+        >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
           doloribus neque corrupti esse fuga earum quod nisi hic blanditiis.
         </p>
-        <a v-anime="{ ...fadeIn, duration: 600 }" href="#" class="block mx-auto mt-4 text-right text-white text-xs">Ver completo</a>
+        <a
+          v-anime="{ ...fadeIn, duration: 600 }"
+          href="#"
+          class="block mx-auto mt-4 text-right text-white text-xs"
+          >Ver completo</a
+        >
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -107,6 +146,10 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
+  &__left {
+    height: 80vh;
+  }
+
   &__title {
     p {
       top: 50%;
@@ -152,10 +195,18 @@ export default {
 
       picture {
         border-radius: 10px;
-        border: 1px solid #FFF;
+        border: 1px solid #fff;
         overflow: hidden;
         padding-top: 56.25%;
       }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    &__left {
+      height: initial;
     }
   }
 }

@@ -9,7 +9,6 @@
   }
 }
 
-
 .fadeBottom10-enter-active,
 .fadeBottom10-leave-active {
   transition: all 200ms;
@@ -18,4 +17,20 @@
 .fadeBottom10-leave-active {
   opacity: 0;
   transform: translateY(10px);
+}
+
+@keyframes moveY10Infinite {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.moveY10Infinite {
+  animation: moveY10Infinite 2s infinite;
 }
