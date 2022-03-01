@@ -1,7 +1,7 @@
 import ScrollReveal from 'scrollreveal';
 
 const fadeInTop20 = {
-  delay: 400,
+  delay: 200,
   distance: '-20px',
   duration: 600,
   reset: true
@@ -15,6 +15,6 @@ const elsfadeInTop20Delay = document.querySelectorAll('[data-scroll-anim-delay="
 elsfadeInTop20Delay.forEach((el, index) => {
   ScrollReveal().reveal(el, {
     ...fadeInTop20,
-    delay: index * 200
+    delay: (index + 1) * 200
   });
 });
