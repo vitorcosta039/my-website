@@ -8,14 +8,25 @@ export default {
   },
   hero: {
     presentation: ['Hi,', 'my name is Vitor,', "I'm a Front-end Dev."],
-    welcome: ['BE', 'WELCOME']
+    welcome: ['BE', 'WELCOME'],
+    contact: "contact me"
   },
   about: {
     title: 'About me',
     description: [
-      'Hello, my name is Vitor, 21 years old, I\'m a Front-End developer from the city of São Vicente/SP, I have 3 years of experience in the area. Currently I work at Totalpass, developing and implementing the Front-End of websites. I also work as a freelancer and although it\'s not my focus, I\'ve done some work as a UI Designer.',
-      'I am a computer technician by ETEC Dra. Ruth Cardoso from São Vicente/SP, it was there that I got to know the world of web development and ended up identifying myself a lot with the area. Since then, I\'ve been deepening and learning more every day.'
+      "Hello, my name is Vitor, 21 years old, I'm a Front-End developer from the city of São Vicente/SP, I have 3 years of experience in the area. Currently I work at Totalpass, developing and implementing the Front-End of websites. I also work as a freelancer and although it's not my focus, I've done some work as a UI Designer.",
+      "I am a computer technician by ETEC Dra. Ruth Cardoso from São Vicente/SP, it was there that I got to know the world of web development and ended up identifying myself a lot with the area. Since then, I've been deepening and learning more every day."
     ],
     occupation: 'Front-end Developer'
+  },
+  skills: {
+    'dev-web': {
+      title: 'web development',
+      text: 'Languages and tools that I have experience for Web Development. Creation of landing pages, blogs and e-commerces mostly from scratch, with the help of wireframes and projected screens.'
+    },
+    design: {
+      title: 'design',
+      text: 'Tools for creating screens, flyers, animated videos and everything related to the visual part of the Web.'
+    }
   }
 };

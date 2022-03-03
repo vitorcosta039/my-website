@@ -14,7 +14,6 @@
         >
           <h2
             class="
-              scroll-about-fadeInTop20
               font-semibold
               mb-4
               lg:mb-8
@@ -30,7 +29,6 @@
 
           <p
             class="
-              scroll-about-fadeInTop20
               text-gray-600
               dark:text-gray-300
               text-sm
@@ -45,7 +43,6 @@
 
           <p
             class="
-              scroll-about-fadeInTop20
               mb-8
               lg:mb-10
               text-gray-600
@@ -106,7 +103,7 @@
                 link="https://github.com/vitorcosta039/"
                 text="GitHub"
                 class="mr-2 lg:mr-4"
-                data-scroll-anim-delay="fadeInTop20"
+                data-scroll-anim="fadeInTop20"
               >
                 <template #icon>
                   <img src="~images/github.png" alt="Github" />
@@ -117,7 +114,8 @@
                 link="https://www.linkedin.com/in/jose-costaa/"
                 text="Linkedin"
                 class="mr-2 lg:mr-4"
-                data-scroll-anim-delay="fadeInTop20"
+                data-scroll-anim-d="fadeInTop20"
+                data-scroll-anim-delay="400"
               >
                 <template #icon>
                   <img src="~images/linkedin.png" alt="Github" />
@@ -127,7 +125,8 @@
               <about-me-card
                 link="https://www.behance.net/vitorcosta0"
                 text="Behance"
-                data-scroll-anim-delay="fadeInTop20"
+                data-scroll-anim-d="fadeInTop20"
+                data-scroll-anim-delay="600"
               >
                 <template #icon>
                   <img src="~images/behance.png" alt="Github" />

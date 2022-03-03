@@ -11,10 +11,11 @@ const elsfadeInTop20 = document.querySelectorAll('[data-scroll-anim="fadeInTop20
 ScrollReveal().reveal(elsfadeInTop20, fadeInTop20);
 
 
-const elsfadeInTop20Delay = document.querySelectorAll('[data-scroll-anim-delay="fadeInTop20"]');
-elsfadeInTop20Delay.forEach((el, index) => {
+const elsfadeInTop20Delay = document.querySelectorAll('[data-scroll-anim-d="fadeInTop20"]');
+elsfadeInTop20Delay.forEach((el) => {
+  const delay = el.getAttribute('data-scroll-anim-delay');
   ScrollReveal().reveal(el, {
     ...fadeInTop20,
-    delay: (index + 1) * 200
+    delay: +delay
   });
 });

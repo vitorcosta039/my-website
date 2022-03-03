@@ -46,14 +46,16 @@
           <span
             v-anime="{ ...fadeIn, delay: 200, duration: 600 }"
             class="inline-flex whitespace-nowrap"
-            >{{ $t('hero.welcome[0]') }}</span
           >
+            {{ $t('hero.welcome[0]') }}
+          </span>
           <br />
           <span
             v-anime="{ ...fadeIn, delay: 400, duration: 600 }"
             class="inline-flex whitespace-nowrap"
-            >{{ $t('hero.welcome[1]') }}</span
           >
+            {{ $t('hero.welcome[1]') }}
+          </span>
         </p>
       </div>
 
@@ -73,7 +75,7 @@
         "
         href="mailto:vitorcostacontato588@gmail.com"
       >
-        entre em contato
+        {{ $t('hero.contact') }}
         <OutlineArrowRightIcon class="ml-2" width="20" />
       </a>
 
@@ -81,7 +83,18 @@
         v-anime="{ ...fadeInTop20, delay: 600, duration: 800 }"
         v-wave
         href="#about"
-        class="moveY10Infinite flex items-center justify-center h-12 mx-auto text-primary dark:text-white w-12 rounded-full"
+        class="
+          moveY10Infinite
+          flex
+          items-center
+          justify-center
+          h-12
+          mx-auto
+          text-primary
+          dark:text-white
+          w-12
+          rounded-full
+        "
       >
         <OutlineChevronDownIcon width="24" />
       </a>
