@@ -9,7 +9,7 @@ export default {
   hero: {
     presentation: ['Hi,', 'my name is Vitor,', "I'm a Front-end Dev."],
     welcome: ['BE', 'WELCOME'],
-    contact: "contact me"
+    contact: 'contact me'
   },
   about: {
     title: 'About me',
@@ -28,5 +28,39 @@ export default {
       title: 'design',
       text: 'Tools for creating screens, flyers, animated videos and everything related to the visual part of the Web.'
     }
+  },
+  portfolio: {
+    title: 'portfolio',
+    filters: ['All', 'Personal', 'Professional'],
+    projects: {
+      imb: {
+        description:
+          'Requirements gathering, creation of the Front-end part and API integration.',
+        category: 'Professional'
+      },
+      zinco: {
+        description:
+          'Front-end creation and integration with PWA creation tool.',
+        category: 'Professional'
+      },
+      mv: {
+        description:
+          'Front-end creation and integration with PWA creation tool.',
+        category: 'Professional'
+      },
+      efs: {
+        description:
+          'Front-end creation and integration with PWA creation tool.',
+        category: 'Professional'
+      },
+      scl: {
+        description:
+          'Front-end creation and integration with PWA creation tool.',
+        category: 'Profissional'
+      }
+    }
+  },
+  footer: {
+    rights: "All rights reserved"
   }
 };

@@ -9,7 +9,7 @@ export default {
   hero: {
     presentation: ['olá,', 'me chamo Vitor,', 'sou Dev Front-end.'],
     welcome: ['SEJA', 'BEM-VINDO'],
-    contact: "entre em contato"
+    contact: 'entre em contato'
   },
   about: {
     title: 'Sobre mim',
@@ -28,5 +28,39 @@ export default {
       title: 'design',
       text: 'Ferramentas para a criação de telas, flyers, vídeos animados e tudo relacionado a parte de visual Web.'
     }
+  },
+  portfolio: {
+    title: 'portfólio',
+    filters: ['Todos', 'Pessoais', 'Profissionais'],
+    projects: {
+      imb: {
+        description:
+          'Levantamento de requisitos, criação da parte de Front-end e integração com API.',
+        category: 'Profissional'
+      },
+      zinco: {
+        description:
+          'Criação da parte de Front-end e integração com ferramenta de criação de PWA.',
+        category: 'Profissional'
+      },
+      mv: {
+        description:
+          'Criação da parte de Front-end e integração com ferramenta de criação de PWA.',
+        category: 'Profissional'
+      },
+      efs: {
+        description:
+          'Criação da parte de Front-end e integração com ferramenta de criação de PWA.',
+        category: 'Profissional'
+      },
+      scl: {
+        description:
+          'Criação da parte de Front-end e integração com ferramenta de criação de PWA.',
+        category: 'Profissional'
+      }
+    }
+  },
+  footer: {
+    rights: "Todos os direitos reservados"
   }
 };

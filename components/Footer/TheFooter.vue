@@ -1,11 +1,10 @@
 <template>
-  <div>Footer
-    <!-- <h1>Color mode: {{ $colorMode.value }}</h1>
-    <select v-model="$colorMode.preference">
-      <option value="system">System</option>
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select> -->
+  <div class="bg-white dark:bg-black-2 py-4 shadow text-center">
+    <div class="container">
+      <p class="text-xs lg:text-sm dark:text-gray-500">
+        © {{ $t('footer.rights') }} - Vitor Costa | 2022
+      </p>
+    </div>
   </div>
 </template>
 

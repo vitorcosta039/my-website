@@ -3,8 +3,9 @@
     <Hero />
     <AboutMe />
     <Skills />
+    <Portfolio />
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br />
   </main>
 </template>
 
