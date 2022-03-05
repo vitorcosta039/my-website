@@ -7,9 +7,10 @@
       <nuxt-link
         v-anime="{ ...fadeIn }"
         :to="`/${$i18n.locale !== 'en' ? $i18n.locale : ''}`"
+        title="Vitor Costa"
       >
         <Logo class="header__logo-desktop" />
-        <span class="absolute hidden">Vitor Costa</span>
+        <span class="absolute invisible opacity-0">Vitor Costa</span>
       </nuxt-link>
 
       <div class="flex items-center">
@@ -138,12 +139,14 @@
             v-anime="{ ...fadeIn, delay: 400, duration: 600 }"
             type="button"
             class="rounded-sm flex lg:hidden ml-6"
+            title="Menu"
             @click="toggleMenu(true)"
           >
             <OutlineMenuAlt3Icon
               width="24"
               class="text-black dark:text-white"
             />
+            <span class="absolute invisible opacity-0">Menu Burguer</span>
           </button>
         </div>
       </div>

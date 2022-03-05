@@ -5,6 +5,8 @@
       <OutlineSunIcon class="duration-300" width="14" />
       <OutlineMoonIcon class="duration-300" width="14" />
     </span>
+
+    <p class="absolute invisible opacity-0">Theme change</p>
   </label>
 </template>
 
