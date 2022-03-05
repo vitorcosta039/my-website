@@ -6,6 +6,7 @@
           v-if="$i18n.locale == 'en'"
           key="USA"
           width="24"
+          height="24"
           src="@/assets/images/icons/icon-eua.png"
           alt="USA"
         />
@@ -13,6 +14,7 @@
           v-else
           key="Brasil"
           width="24"
+          height="24"
           src="@/assets/images/icons/icon-brasil.png"
           alt="Brasil"
         />
@@ -46,7 +48,12 @@
           "
           :to="switchLocalePath('en')"
         >
-          <img width="24" src="@/assets/images/icons/icon-eua.png" alt="USA" />
+          <img
+            width="24"
+            height="24"
+            src="@/assets/images/icons/icon-eua.png"
+            alt="USA"
+          />
           <p
             class="
               ml-2
@@ -83,6 +90,7 @@
         >
           <img
             width="24"
+            height="24"
             src="@/assets/images/icons/icon-brasil.png"
             alt="Brasil"
           />

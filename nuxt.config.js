@@ -122,14 +122,19 @@ export default {
         vueI18nLoader: true
       }
     ],
+    '@nuxtjs/robots',
     'v-wave/nuxt'
   ],
 
-  // pwa: {
-  //   manifest: {
-  //     lang: 'en'
-  //   }
-  // },
+  pwa: {
+    manifest: {
+      name: 'Portfólio Vitor Costa',
+      short_name: 'Vitor Costa',
+      description: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.',
+      lang: 'en',
+      theme_color: '#5480f2'
+    }
+  },
 
   plugins: [{ src: '~/plugins/scrollreveal', ssr: false }],
 

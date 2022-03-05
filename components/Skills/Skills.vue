@@ -60,6 +60,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="18"
                     src="~images/skills/html.png"
                     alt="HTML"
                     title="HTML"
@@ -76,6 +77,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="18"
                     src="~images/skills/css.png"
                     alt="CSS"
                     title="CSS"
@@ -92,6 +94,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="18"
                     src="~images/skills/js.png"
                     alt="JavaScript"
                     title="JavaScript"
@@ -108,6 +111,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="14"
                     src="~images/skills/vue.png"
                     alt="VueJs"
                     title="VueJs"
@@ -124,6 +128,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/wp.png"
                     alt="WordPress"
                     title="WordPress"
@@ -140,6 +145,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/seo.png"
                     alt="SEO"
                     title="SEO"
@@ -156,6 +162,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/git.png"
                     alt="Git"
                     title="Git"
@@ -172,6 +179,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/github.png"
                     alt="GitHub"
                     title="GitHub"
@@ -217,6 +225,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/figma.png"
                     alt="Figma"
                     title="Figma"
@@ -233,6 +242,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/xd.png"
                     alt="Adobe XD"
                     title="Adobe XD"
@@ -249,6 +259,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/ps.png"
                     alt="Adobe Photoshop"
                     title="Adobe Photoshop"
@@ -265,6 +276,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/ae.png"
                     alt="Adobe After Effects"
                     title="Adobe After Effects"
@@ -281,6 +293,7 @@
                 <template #image>
                   <img
                     width="16"
+                    height="16"
                     src="~images/skills/pr.png"
                     alt="Adobe Premiere"
                     title="Adobe Premiere"
