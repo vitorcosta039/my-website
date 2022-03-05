@@ -15,16 +15,27 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
       { hid: 'author', name: 'author', content: 'Vitor Costa' },
-      { hid: 'description', name: 'description', content: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.' },
-      { name: 'keys', content: 'front-end, developer, frontend developer, desenvolvedor frontend, vuejs, vue, js, nuxt, nuxtjs, web, site, website' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.'
+      },
+      {
+        name: 'keys',
+        content:
+          'front-end, developer, frontend developer, desenvolvedor frontend, vuejs, vue, js, nuxt, nuxtjs, web, site, website'
+      },
 
       // OpenGraph
       { name: 'og:locale', content: 'pt_BR' },
       { name: 'og:url', content: 'https://vitorcosta.dev' },
       { name: 'og:title', content: 'Vitor Costa - Dev Front-end' },
       { name: 'og:site_name', content: 'Vitor Costa' },
-      { name: 'og:description', content: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.' },
-      { name: 'og:image', content: 'https://vitorcosta.dev/logo-lg.png' },
+      {
+        name: 'og:description',
+        content: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.'
+      },
+      { name: 'og:image', content: 'https://vitorcosta.dev/icon.png' },
       { name: 'og:image:type', content: 'image/png' },
       { name: 'og:image:width', content: '1000' },
       { name: 'og:image:height', content: '1000' },
@@ -34,12 +45,13 @@ export default {
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:url', content: 'https://vitorcosta.dev' },
       { name: 'twitter:title', content: 'Vitor Costa - Dev Front-end' },
-      { name: 'twitter:description', content: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.' },
-      { name: 'twitter:image', content: 'https://vitorcosta.dev/logo-lg.png' },
+      {
+        name: 'twitter:description',
+        content: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.'
+      },
+      { name: 'twitter:image', content: 'https://vitorcosta.dev/icon.png' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   css: ['./assets/style/main.scss'],
@@ -90,9 +102,9 @@ export default {
         detectBrowserLanguage: {
           useCookie: true,
           cookieKey: 'i18n_redirected',
-          redirectOn: 'root',
+          redirectOn: 'root'
         },
-        defaultLocale: 'en',
+        defaultLocale: 'br',
         locales: [
           {
             code: 'en',
@@ -113,11 +125,11 @@ export default {
     'v-wave/nuxt'
   ],
 
-  pwa: {
-    manifest: {
-      lang: 'en'
-    }
-  },
+  // pwa: {
+  //   manifest: {
+  //     lang: 'en'
+  //   }
+  // },
 
   plugins: [{ src: '~/plugins/scrollreveal', ssr: false }],
 

@@ -9,7 +9,12 @@ export default {
   hero: {
     presentation: ['olá,', 'me chamo Vitor,', 'sou Dev Front-end.'],
     welcome: ['SEJA', 'BEM-VINDO'],
-    contact: 'entre em contato'
+    contact: 'entre em contato',
+    project: {
+      title: 'Imobille',
+      description: 'Imobiliária em Balneário Camboriú, Itajái e Praia Brava',
+      textLink: 'acessar'
+    }
   },
   about: {
     title: 'Sobre mim',
@@ -60,7 +65,50 @@ export default {
       }
     }
   },
+  experience: {
+    title: 'experiência profissional',
+    jobs: [
+      {
+        company: 'Triad Productivity Solutions',
+        img: 'triad.png',
+        period: 'Ago. 2019 - Abr. 2021',
+        occupation: 'Web Designer',
+        functions: [
+          '• Codificação e desenvolvimento de telas de Websites;',
+          '• Criação de banners, thumbnails e conteúdos visuais para Websites;',
+          '• Gerenciamento de conteúdo de plataformas educacionais.'
+        ]
+      },
+      {
+        company: 'Nerau CX',
+        img: 'nerau.png',
+        period: 'Out. 2020 - Dez. 2021',
+        occupation: 'Desenvolvedor Front-End',
+        functions: [
+          '• Desenvolvimento do Front-end de e-commerces para posteriormente serem implementadas as funcionalidades;',
+          '• Integração de Front-end a uma ferramenta de geração de PWA;',
+          '• Criação e implementação de sistemas completos com Vue/Nuxt;',
+          '• Análise de requisitos para implementação de projetos;',
+          '• Manutenção do layout de Websites.'
+        ]
+      },
+      {
+        company: 'TotalPass Brasil',
+        img: 'tp.png',
+        period: 'Jan. 2022 - o momento',
+        occupation: 'Front-End Engineer',
+        functions: [
+          '• Criação e manutenção de layout de Websites;',
+          '• Análise de possíveis projetos para implementação e melhoria dos processos da empresa.'
+        ]
+      }
+    ]
+  },
   footer: {
-    rights: "Todos os direitos reservados"
+    contact: {
+      title: 'entre em contato',
+      quote: 'o seu projeto pode mudar o mundo.'
+    },
+    rights: 'Todos os direitos reservados'
   }
 };

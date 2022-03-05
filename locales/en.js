@@ -9,7 +9,12 @@ export default {
   hero: {
     presentation: ['Hi,', 'my name is Vitor,', "I'm a Front-end Dev."],
     welcome: ['BE', 'WELCOME'],
-    contact: 'contact me'
+    contact: 'contact me',
+    project: {
+      title: 'Imobille',
+      description: 'Real estate in Balneário Camboriú, Itajái and Praia Brava',
+      textLink: 'access'
+    }
   },
   about: {
     title: 'About me',
@@ -56,11 +61,54 @@ export default {
       scl: {
         description:
           'Front-end creation and integration with PWA creation tool.',
-        category: 'Profissional'
+        category: 'Professional'
       }
     }
   },
+  experience: {
+    title: 'professional experience',
+    jobs: [
+      {
+        company: 'Triad Productivity Solutions',
+        img: 'triad.png',
+        period: 'Aug. 2019 - Apr. 2021',
+        occupation: 'Web Designer',
+        functions: [
+          '• Coding and development of website screens;',
+          '• Creation of banners, thumbnails and visual content for Websites;',
+          '• Content management of educational platforms.'
+        ]
+      },
+      {
+        company: 'Nerau CX',
+        img: 'nerau.png',
+        period: 'Oct. 2020 - Dec. 2021',
+        occupation: 'Front-End Developer',
+        functions: [
+          '• Development of the e-commerce Front-end to later implement the functionalities;',
+          '• Front-end integration to a PWA generation tool;',
+          '• Creation and implementation of complete systems with Vue/Nuxt;',
+          '• Requirements analysis for project implementation;',
+          '• Website layout maintenance.'
+        ]
+      },
+      {
+        company: 'TotalPass Brasil',
+        img: 'tp.png',
+        period: 'Jan. 2022 - until the moment',
+        occupation: 'Front-End Engineer',
+        functions: [
+          '• Website layout creation and maintenance;',
+          '• Analysis of possible projects for implementation and improvement of company processes.'
+        ]
+      }
+    ]
+  },
   footer: {
-    rights: "All rights reserved"
+    contact: {
+      title: 'contact me',
+      quote: 'your project can change the world.'
+    },
+    rights: 'All rights reserved'
   }
 };

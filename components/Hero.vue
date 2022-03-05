@@ -106,7 +106,7 @@
         hidden
         lg:flex lg:items-center lg:flex-col lg:justify-center
         px-8
-        py-16
+        py-24
       "
     >
       <div class="hero__right-content px-8">
@@ -116,7 +116,7 @@
         >
           <img
             class="absolute left-0 top-0 w-full"
-            src="~images/16x9.png"
+            src="~images/projects/imb.jpg"
             alt="Projeto"
           />
         </picture>
@@ -124,21 +124,22 @@
           v-anime="{ ...fadeIn, duration: 600 }"
           class="font-semibold px-4 mt-2 mb-1 text-gray-100 text-sm"
         >
-          Nome do projeto
+          {{ $t('hero.project.title') }}
         </h2>
         <p
           v-anime="{ ...fadeIn, duration: 600 }"
           class="px-4 text-gray-300 text-xs"
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-          doloribus neque corrupti esse fuga earum quod nisi hic blanditiis.
+          {{ $t('hero.project.description') }}
         </p>
         <a
           v-anime="{ ...fadeIn, duration: 600 }"
-          href="#"
+          href="https://imobillenegocios.com.br/"
           class="block mx-auto mt-4 text-right text-white text-xs"
-          >Ver completo</a
+          target="_blank"
         >
+          {{ $t('hero.project.textLink') }}
+        </a>
       </div>
     </div>
   </section>
@@ -204,7 +205,7 @@ export default {
     }
 
     &-content {
-      max-width: 420px;
+      max-width: 500px;
       z-index: 5;
 
       picture {
@@ -212,6 +213,17 @@ export default {
         border: 1px solid #fff;
         overflow: hidden;
         padding-top: 56.25%;
+
+        &::before {
+          background: rgba(0, 0, 0, 0.4);
+          content: '';
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          z-index: 2;
+        }
       }
     }
   }

@@ -1,11 +1,10 @@
 <template>
   <main class="home">
     <Hero />
-    <AboutMe />
-    <Skills />
-    <Portfolio />
-
-    <br /><br />
+    <AboutMe id="aboutme" />
+    <Skills id="skills" />
+    <Portfolio id="portfolio" />
+    <Experience id="experience" />
   </main>
 </template>
 

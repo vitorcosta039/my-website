@@ -50,19 +50,19 @@
           <nav class="w-full">
             <ul class="flex flex-col lg:flex-row mb-8 lg:mb-0">
               <li v-anime="{ ...fadeInLeft10, duration: 600 }">
-                <header-link link="#">
+                <header-link link="#aboutme" @toggle-menu="toggleMenu(false)">
                   <OutlineUserIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.about-me') }}
                 </header-link>
               </li>
               <li v-anime="{ ...fadeInLeft10, delay: 200, duration: 600 }">
-                <header-link link="#">
+                <header-link link="#skills" @toggle-menu="toggleMenu(false)">
                   <OutlineChartBarIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.skills') }}
                 </header-link>
               </li>
               <li v-anime="{ ...fadeInLeft10, delay: 400, duration: 600 }">
-                <header-link link="#">
+                <header-link link="#portfolio" @toggle-menu="toggleMenu(false)">
                   <OutlineClipboardListIcon
                     width="24"
                     class="flex lg:hidden mr-3"
@@ -71,13 +71,16 @@
                 </header-link>
               </li>
               <li v-anime="{ ...fadeInLeft10, delay: 600, duration: 600 }">
-                <header-link link="#">
+                <header-link
+                  link="#experience"
+                  @toggle-menu="toggleMenu(false)"
+                >
                   <OutlinePuzzleIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.experience') }}
                 </header-link>
               </li>
               <li v-anime="{ ...fadeInLeft10, delay: 800, duration: 600 }">
-                <header-link link="#">
+                <header-link link="#contact" @toggle-menu="toggleMenu(false)">
                   <OutlineMailIcon width="24" class="flex lg:hidden mr-3" />
                   {{ $t('menu.contact') }}
                 </header-link>

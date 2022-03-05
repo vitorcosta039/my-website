@@ -55,7 +55,7 @@
               whitespace-nowrap
             "
           >
-            <span class="text-gray-400 dark:text-gray-500">(EN)</span> English
+            <span class="text-gray-400 dark:text-gray-500">(US)</span> English
           </p>
           <transition name="fadeBottom10" mode="out-in">
             <OutlineCheckIcon
@@ -90,7 +90,7 @@
               whitespace-nowrap
             "
           >
-            <span class="text-gray-400 dark:text-gray-500">(PT)</span> Português
+            <span class="text-gray-400 dark:text-gray-500">(BR)</span> Português
           </p>
           <transition name="fadeBottom10" mode="out-in">
             <OutlineCheckIcon
