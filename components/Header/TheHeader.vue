@@ -43,6 +43,7 @@
               v-wave
               type="button"
               class="rounded-sm text-gray-400"
+              title="Close menu"
               @click="toggleMenu(false)"
             >
               <OutlineXIcon width="24" />

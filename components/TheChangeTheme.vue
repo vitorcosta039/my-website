@@ -1,12 +1,10 @@
 <template>
-  <label class="theme" :for="id" @click="handleChangeTheme">
+  <label class="theme" :for="id" :title="id" @click="handleChangeTheme">
     <input :id="id" v-model="isThemeDark" type="checkbox" />
     <span class="duration-300 flex relative rounded-full">
       <OutlineSunIcon class="duration-300" width="14" />
       <OutlineMoonIcon class="duration-300" width="14" />
     </span>
-
-    <p class="absolute invisible opacity-0">Theme change</p>
   </label>
 </template>
 
