@@ -9,6 +9,7 @@
         :to="`/${$i18n.locale !== 'en' ? $i18n.locale : ''}`"
       >
         <Logo class="header__logo-desktop" />
+        <span class="absolute hidden">Vitor Costa</span>
       </nuxt-link>
 
       <div class="flex items-center">

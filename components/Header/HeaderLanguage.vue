@@ -5,12 +5,14 @@
         <img
           v-if="$i18n.locale == 'en'"
           key="USA"
+          width="24"
           src="@/assets/images/icons/icon-eua.png"
           alt="USA"
         />
         <img
           v-else
           key="Brasil"
+          width="24"
           src="@/assets/images/icons/icon-brasil.png"
           alt="Brasil"
         />
@@ -44,7 +46,7 @@
           "
           :to="switchLocalePath('en')"
         >
-          <img src="@/assets/images/icons/icon-eua.png" alt="USA" />
+          <img width="24" src="@/assets/images/icons/icon-eua.png" alt="USA" />
           <p
             class="
               ml-2
@@ -79,7 +81,11 @@
           "
           :to="switchLocalePath('br')"
         >
-          <img src="@/assets/images/icons/icon-brasil.png" alt="Brasil" />
+          <img
+            width="24"
+            src="@/assets/images/icons/icon-brasil.png"
+            alt="Brasil"
+          />
           <p
             class="
               ml-2

@@ -58,7 +58,12 @@
                 data-scroll-anim-delay="200"
               >
                 <template #image>
-                  <img src="~images/skills/html.png" alt="HTML" title="HTML" />
+                  <img
+                    width="16"
+                    src="~images/skills/html.png"
+                    alt="HTML"
+                    title="HTML"
+                  />
                 </template>
               </skill-card>
 
@@ -69,7 +74,12 @@
                 data-scroll-anim-delay="300"
               >
                 <template #image>
-                  <img src="~images/skills/css.png" alt="CSS" title="CSS" />
+                  <img
+                    width="16"
+                    src="~images/skills/css.png"
+                    alt="CSS"
+                    title="CSS"
+                  />
                 </template>
               </skill-card>
 
@@ -81,6 +91,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/js.png"
                     alt="JavaScript"
                     title="JavaScript"
@@ -95,7 +106,12 @@
                 data-scroll-anim-delay="500"
               >
                 <template #image>
-                  <img src="~images/skills/vue.png" alt="VueJs" title="VueJs" />
+                  <img
+                    width="16"
+                    src="~images/skills/vue.png"
+                    alt="VueJs"
+                    title="VueJs"
+                  />
                 </template>
               </skill-card>
 
@@ -107,6 +123,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/wp.png"
                     alt="WordPress"
                     title="WordPress"
@@ -121,7 +138,12 @@
                 data-scroll-anim-delay="700"
               >
                 <template #image>
-                  <img src="~images/skills/seo.png" alt="SEO" title="SEO" />
+                  <img
+                    width="16"
+                    src="~images/skills/seo.png"
+                    alt="SEO"
+                    title="SEO"
+                  />
                 </template>
               </skill-card>
 
@@ -132,7 +154,12 @@
                 data-scroll-anim-delay="800"
               >
                 <template #image>
-                  <img src="~images/skills/git.png" alt="Git" title="Git" />
+                  <img
+                    width="16"
+                    src="~images/skills/git.png"
+                    alt="Git"
+                    title="Git"
+                  />
                 </template>
               </skill-card>
 
@@ -144,6 +171,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/github.png"
                     alt="GitHub"
                     title="GitHub"
@@ -188,6 +216,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/figma.png"
                     alt="Figma"
                     title="Figma"
@@ -203,6 +232,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/xd.png"
                     alt="Adobe XD"
                     title="Adobe XD"
@@ -218,6 +248,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/ps.png"
                     alt="Adobe Photoshop"
                     title="Adobe Photoshop"
@@ -233,6 +264,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/ae.png"
                     alt="Adobe After Effects"
                     title="Adobe After Effects"
@@ -248,6 +280,7 @@
               >
                 <template #image>
                   <img
+                    width="16"
                     src="~images/skills/pr.png"
                     alt="Adobe Premiere"
                     title="Adobe Premiere"

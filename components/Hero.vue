@@ -79,10 +79,8 @@
         <OutlineArrowRightIcon class="ml-2" width="20" />
       </a>
 
-      <a
+      <div
         v-anime="{ ...fadeInTop20, delay: 600, duration: 800 }"
-        v-wave
-        href="#about"
         class="
           moveY10Infinite
           flex
@@ -97,7 +95,7 @@
         "
       >
         <OutlineChevronDownIcon width="24" />
-      </a>
+      </div>
     </div>
 
     <div

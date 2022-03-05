@@ -106,7 +106,7 @@
                 data-scroll-anim="fadeInTop20"
               >
                 <template #icon>
-                  <img src="~images/github.png" alt="Github" />
+                  <img width="24" src="~images/github.png" alt="Github" />
                 </template>
               </about-me-card>
 
@@ -118,7 +118,7 @@
                 data-scroll-anim-delay="400"
               >
                 <template #icon>
-                  <img src="~images/linkedin.png" alt="Github" />
+                  <img width="24" src="~images/linkedin.png" alt="Github" />
                 </template>
               </about-me-card>
 
@@ -129,7 +129,7 @@
                 data-scroll-anim-delay="600"
               >
                 <template #icon>
-                  <img src="~images/behance.png" alt="Github" />
+                  <img width="24" src="~images/behance.png" alt="Github" />
                 </template>
               </about-me-card>
             </div>
