@@ -19,15 +19,15 @@ Access my website which contains information about my life. Who knows, maybe we 
 ### About project
 
 #### Style
-1. Using the BEM CSS pattern;
-2. Tailwind was configured and used in the project.
+* Using the BEM CSS pattern;
+* Tailwind was configured and used in the project.
 <br/>
-Element classes are in alphabetical order to help with maintenance. Except for two rules:
+Element classes are in alphabetical order to help with maintenance. Except for two rules: 
 <br/>
-1. When not a tailwind identifier, example: `header, footer, page-home`
-2. When are classes that complement other classes: `class="bg-white hover:bg-primary"`
+1. When not a tailwind identifier, example: `header, footer, page-home` <br/>
+2. When are classes that complement other classes: `class="bg-white hover:bg-primary"` <br/><br/>
 
-Example of the two rules together:
+Example of the two rules together: 
 ```
 class="bg-white dark:bg-black-2 border-primary flex h-20 header items-center" - BAD 🔴
 class="header bg-white border-primary dark:bg-black-2 flex h-20 items-center" - BAD 🔴
