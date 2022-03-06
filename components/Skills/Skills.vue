@@ -87,9 +87,60 @@
 
               <skill-card
                 class="mr-2 mb-2"
-                hovercolor="linear-gradient(180deg, #F58233 0%, #F99D34 100%)"
+                hovercolor="#CF649A"
                 data-scroll-anim-d="fadeInTop20"
                 data-scroll-anim-delay="400"
+              >
+                <template #image>
+                  <img
+                    width="16"
+                    height="18"
+                    src="~images/skills/sass.png"
+                    alt="Sass"
+                    title="Sass"
+                  />
+                </template>
+              </skill-card>
+
+              <skill-card
+                class="mr-2 mb-2"
+                hovercolor="#57BEB5"
+                data-scroll-anim-d="fadeInTop20"
+                data-scroll-anim-delay="500"
+              >
+                <template #image>
+                  <img
+                    width="16"
+                    height="18"
+                    src="~images/skills/tailwind.png"
+                    alt="Tailwind"
+                    title="Tailwind"
+                  />
+                </template>
+              </skill-card>
+
+              <skill-card
+                class="mr-2 mb-2"
+                hovercolor="#7952B3"
+                data-scroll-anim-d="fadeInTop20"
+                data-scroll-anim-delay="600"
+              >
+                <template #image>
+                  <img
+                    width="16"
+                    height="18"
+                    src="~images/skills/bootstrap.png"
+                    alt="Bootstrap"
+                    title="Bootstrap"
+                  />
+                </template>
+              </skill-card>
+
+              <skill-card
+                class="mr-2 mb-2"
+                hovercolor="linear-gradient(180deg, #F58233 0%, #F99D34 100%)"
+                data-scroll-anim-d="fadeInTop20"
+                data-scroll-anim-delay="700"
               >
                 <template #image>
                   <img
@@ -106,15 +157,32 @@
                 class="mr-2 mb-2"
                 hovercolor="linear-gradient(180deg, #34495E 0%, #41B883 100%)"
                 data-scroll-anim-d="fadeInTop20"
-                data-scroll-anim-delay="500"
+                data-scroll-anim-delay="800"
               >
                 <template #image>
                   <img
                     width="16"
                     height="14"
                     src="~images/skills/vue.png"
-                    alt="VueJs"
-                    title="VueJs"
+                    alt="Vue.js"
+                    title="Vue.js"
+                  />
+                </template>
+              </skill-card>
+
+              <skill-card
+                class="mr-2 mb-2"
+                hovercolor="linear-gradient(180deg, #34495E 0%, #41B883 100%)"
+                data-scroll-anim-d="fadeInTop20"
+                data-scroll-anim-delay="900"
+              >
+                <template #image>
+                  <img
+                    width="18"
+                    height="14"
+                    src="~images/skills/nuxt.png"
+                    alt="Nuxt.js"
+                    title="Nuxt.js"
                   />
                 </template>
               </skill-card>
@@ -123,7 +191,7 @@
                 class="mr-2 mb-2"
                 hovercolor="linear-gradient(180deg, #21759B 0%, #2392C5 100%)"
                 data-scroll-anim-d="fadeInTop20"
-                data-scroll-anim-delay="600"
+                data-scroll-anim-delay="1000"
               >
                 <template #image>
                   <img
@@ -140,7 +208,7 @@
                 class="mr-2 mb-2"
                 hovercolor="linear-gradient(180deg, #7EA8EB 0%, #5B8AD6 100%)"
                 data-scroll-anim-d="fadeInTop20"
-                data-scroll-anim-delay="700"
+                data-scroll-anim-delay="1100"
               >
                 <template #image>
                   <img
@@ -155,9 +223,26 @@
 
               <skill-card
                 class="mr-2 mb-2"
+                hovercolor="#1C78C0"
+                data-scroll-anim-d="fadeInTop20"
+                data-scroll-anim-delay="1200"
+              >
+                <template #image>
+                  <img
+                    width="16"
+                    height="16"
+                    src="~images/skills/webpack.png"
+                    alt="Webpack"
+                    title="Webpack"
+                  />
+                </template>
+              </skill-card>
+
+              <skill-card
+                class="mr-2 mb-2"
                 hovercolor="#F05033"
                 data-scroll-anim-d="fadeInTop20"
-                data-scroll-anim-delay="800"
+                data-scroll-anim-delay="1300"
               >
                 <template #image>
                   <img
@@ -174,7 +259,7 @@
                 class="mb-2"
                 hovercolor="#000"
                 data-scroll-anim-d="fadeInTop20"
-                data-scroll-anim-delay="900"
+                data-scroll-anim-delay="1400"
               >
                 <template #image>
                   <img
@@ -186,6 +271,8 @@
                   />
                 </template>
               </skill-card>
+
+
             </div>
           </div>
 

@@ -45,9 +45,27 @@
           <li>
             <header-social-link
               link="mailto:vitorcostacontato588@gmail.com"
-              title="Mail"
+              title="Email"
             >
-              <OutlineMailIcon width="24" color="#D3D3D3" />
+              <OutlineMailIcon width="20" color="#D3D3D3" />
+            </header-social-link>
+          </li>
+
+           <li>
+            <header-social-link
+              link="https://contate.me/vitorcosta"
+              title="WhatsApp"
+            >
+              <IconWhatsApp width="20" color="#D3D3D3" />
+            </header-social-link>
+          </li>
+
+          <li>
+            <header-social-link
+              :link="`${$i18n.locale === 'en' ? '/curriculo-en.pdf' : '/curriculo-pt.pdf'}`"
+              title="Currículo"
+            >
+              <OutlineDocumentTextIcon width="20" color="#D3D3D3" />
             </header-social-link>
           </li>
         </ul>

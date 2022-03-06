@@ -19,7 +19,7 @@ export default {
   about: {
     title: 'About me',
     description: [
-      "Hello, my name is Vitor, 21 years old, I'm a Front-End developer from the city of São Vicente/SP, I have 3 years of experience in the area. Currently I work at Totalpass, developing and implementing the Front-End of websites. I also work as a freelancer and although it's not my focus, I've done some work as a UI Designer.",
+      "Hello, my name is Vitor, 21 years old, I'm a Front-End developer from the city of São Vicente/SP, I have 3 years of experience in the area. Currently I work at Totalpass, developing and implementing the Front-End of websites. I also work as a freelancer but it's not my focus and I've done some work as a UI Designer too.",
       "I am a computer technician by ETEC Dra. Ruth Cardoso from São Vicente/SP, it was there that I got to know the world of web development and ended up identifying myself a lot with the area. Since then, I've been deepening and learning more every day."
     ],
     occupation: 'Front-end Developer'
@@ -69,14 +69,13 @@ export default {
     title: 'professional experience',
     jobs: [
       {
-        company: 'Triad Productivity Solutions',
-        img: 'triad.png',
-        period: 'Aug. 2019 - Apr. 2021',
-        occupation: 'Web Designer',
+        company: 'TotalPass Brasil',
+        img: 'tp.png',
+        period: 'Jan. 2022 - until the moment',
+        occupation: 'Front-End Engineer',
         functions: [
-          '• Coding and development of website screens;',
-          '• Creation of banners, thumbnails and visual content for Websites;',
-          '• Content management of educational platforms.'
+          '• Website layout creation and maintenance;',
+          '• Analysis of possible projects for implementation and improvement of company processes.'
         ]
       },
       {
@@ -93,13 +92,14 @@ export default {
         ]
       },
       {
-        company: 'TotalPass Brasil',
-        img: 'tp.png',
-        period: 'Jan. 2022 - until the moment',
-        occupation: 'Front-End Engineer',
+        company: 'Triad Productivity Solutions',
+        img: 'triad.png',
+        period: 'Aug. 2019 - Apr. 2021',
+        occupation: 'Web Designer',
         functions: [
-          '• Website layout creation and maintenance;',
-          '• Analysis of possible projects for implementation and improvement of company processes.'
+          '• Coding and development of Website;',
+          '• Creation of banners, thumbnails and visual content for Websites;',
+          '• Content management of educational platforms.'
         ]
       }
     ]

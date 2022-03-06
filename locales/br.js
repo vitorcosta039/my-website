@@ -19,7 +19,7 @@ export default {
   about: {
     title: 'Sobre mim',
     description: [
-      'Olá, meu nome é Vitor, 21 anos, sou desenvolvedor Front-End da cidade de São Vicente/SP, tenho 3 anos de experiência na área. Atualmente trabalho na empresa Totalpass, desenvolvendo e implementando o Front-End de websites. Atuo também, como freelancer e apesar de não ser meu foco, já realizei alguns trabalhos como UI Designer.',
+      'Olá, meu nome é Vitor, 21 anos, sou desenvolvedor Front-End da cidade de São Vicente/SP, tenho 3 anos de experiência na área. Atualmente trabalho na empresa Totalpass, desenvolvendo e implementando o Front-End de websites. Atuo também como freelancer e apesar de não ser meu foco, já realizei alguns trabalhos como UI Designer.',
       'Sou formado em Técnico em Informática pela ETEC Dra. Ruth Cardoso de São Vicente/SP, foi lá que conheci o mundo do desenvolvimento web e acabei me identificando bastante com a área. Desde então, venho me aprofundando e aprendendo cada dia mais.'
     ],
     occupation: 'Desenvolvedor Front-end'
@@ -69,14 +69,13 @@ export default {
     title: 'experiência profissional',
     jobs: [
       {
-        company: 'Triad Productivity Solutions',
-        img: 'triad.png',
-        period: 'Ago. 2019 - Abr. 2021',
-        occupation: 'Web Designer',
+        company: 'TotalPass Brasil',
+        img: 'tp.png',
+        period: 'Jan. 2022 - o momento',
+        occupation: 'Front-End Engineer',
         functions: [
-          '• Codificação e desenvolvimento de telas de Websites;',
-          '• Criação de banners, thumbnails e conteúdos visuais para Websites;',
-          '• Gerenciamento de conteúdo de plataformas educacionais.'
+          '• Criação e manutenção de layout de Websites;',
+          '• Análise de possíveis projetos para implementação e melhoria dos processos da empresa.'
         ]
       },
       {
@@ -93,13 +92,14 @@ export default {
         ]
       },
       {
-        company: 'TotalPass Brasil',
-        img: 'tp.png',
-        period: 'Jan. 2022 - o momento',
-        occupation: 'Front-End Engineer',
+        company: 'Triad Productivity Solutions',
+        img: 'triad.png',
+        period: 'Ago. 2019 - Abr. 2021',
+        occupation: 'Web Designer',
         functions: [
-          '• Criação e manutenção de layout de Websites;',
-          '• Análise de possíveis projetos para implementação e melhoria dos processos da empresa.'
+          '• Codificação e desenvolvimento de telas de Websites;',
+          '• Criação de banners, thumbnails e conteúdos visuais para Websites;',
+          '• Gerenciamento de conteúdo de plataformas educacionais.'
         ]
       }
     ]

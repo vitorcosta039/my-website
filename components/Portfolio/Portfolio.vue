@@ -124,7 +124,7 @@ export default {
           link: 'https://www.mariavalentina.com.br/'
         },
         {
-          title: 'Esporte Fino',
+          title: 'Esporte Fino Store',
           img: 'efs.svg',
           key: 'efs',
           link: 'https://www.esportefinostore.com.br/'
