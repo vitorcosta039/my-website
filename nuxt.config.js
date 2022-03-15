@@ -21,9 +21,9 @@ export default {
         content: 'Olá, meu nome é Vitor Costa, sou Dev Front-end.'
       },
       {
-        name: 'keys',
+        name: 'keywords',
         content:
-          'front-end, developer, frontend developer, desenvolvedor frontend, vuejs, vue, js, nuxt, nuxtjs, web, site, website'
+          'front-end, developer, frontend developer, desenvolvedor frontend, vuejs, vue, js, nuxt, nuxtjs, web, site, website, vitor costa, vitor costa dev, vitor costa desenvolvedor, vitor costa front-end, frontend, vitorcosta front-end, vitorcosta desenvolvedor'
       },
 
       // OpenGraph
@@ -94,6 +94,7 @@ export default {
   },
 
   modules: [
+    '@nuxtjs/gtm',
     [
       '@nuxtjs/i18n',
       {
@@ -124,6 +125,10 @@ export default {
     '@nuxtjs/robots',
     'v-wave/nuxt'
   ],
+
+  gtm: {
+    id: 'GTM-MLDRZ8Z'
+  },
 
   plugins: [{ src: '~/plugins/scrollreveal', ssr: false }],
 
